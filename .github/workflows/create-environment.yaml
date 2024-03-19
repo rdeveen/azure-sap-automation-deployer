@@ -58,8 +58,8 @@ jobs:
           region_map=$(echo var.region_mapping.${region} | terraform console | tr -d '"')
           popd
 
-          region_display_name=$(az account list-locations -o json| jq --arg REGION $region '.[] | select(.name==$REGION) | .displayName' -r)
-
+          #region_display_name=$(az account list-locations -o json| jq --arg REGION $region '.[] | select(.name==$REGION) | .displayName' -r)
+          region_display_name="West Europe"
           echo region_map: $region_map
           echo region_display_name: $region_display_name
 
