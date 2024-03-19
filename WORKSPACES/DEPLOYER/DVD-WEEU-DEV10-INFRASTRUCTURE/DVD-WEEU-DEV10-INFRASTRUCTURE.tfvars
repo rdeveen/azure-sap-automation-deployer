@@ -30,7 +30,7 @@ location = "westeurope"
 #resourcegroup_arm_id=""
 
 resourcegroup_tags = {
-  Control_plane = "West Europe"
+  Control_plane = "westeurope"
 }
 
 #########################################################################################
