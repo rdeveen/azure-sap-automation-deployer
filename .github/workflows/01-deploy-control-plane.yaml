@@ -63,6 +63,7 @@ jobs:
 
       - name: Setup deployer
         run: |
+          printenv
           cd ${SAP_AUTOMATION_REPO_PATH}
           deploy/automation/01-deploy-control-plane/01-setup-deployer.sh
         env:
