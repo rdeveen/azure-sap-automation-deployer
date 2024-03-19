@@ -59,7 +59,7 @@ jobs:
         run: |
           printenv
           cd ${SAP_AUTOMATION_REPO_PATH}
-          deploy/automation/01-deploy-control-plane/01-setup-deployer.sh
+          #deploy/automation/01-deploy-control-plane/01-setup-deployer.sh
         env:
           APP_REGISTRATION_APP_ID: ${{ secrets.APP_REGISTRATION_APP_ID }}
           APP_TOKEN: ${{ steps.get_workflow_token.outputs.token }}
@@ -74,10 +74,9 @@ jobs:
           libraryconfig: ${{ inputs.library }}.tfvars
           libraryfolder: ${{ inputs.library }}
           use_webapp: ${{ inputs.use_webapp }}
-          GITHUB_SERVER_URL: ${{ github.server_url }}
-          GITHUB_API_URL: ${{ github.api_url }}
-          GITHUB_REPOSITORY: ${{ github.repository }}
-          GITHUB_WORKFLOW: "${{ github.workflow }}:${{ github.run_number }}-${{ github.run_attempt }}"
+          # GITHUB_SERVER_URL: ${{ github.server_url }}
+          # GITHUB_API_URL: ${{ github.api_url }}
+          # GITHUB_REPOSITORY: ${{ github.repository }}
   deploy_controlplane:
     name: Deploy the control plane
     environment: ${{ inputs.deployer }}
