@@ -64,7 +64,9 @@ jobs:
 
       - name: Setup deployer
         run: |
+          echo "##[group]printenv"
           printenv
+          echo "##[endgroup]"
           cd ${SAP_AUTOMATION_REPO_PATH}
           deploy/automation/01-deploy-control-plane/01-setup-deployer.sh
         env:
@@ -119,7 +121,9 @@ jobs:
 
       - name: Deploy control plane
         run: |
+          echo "##[group]printenv"
           printenv
+          echo "##[endgroup]"
           cd ${SAP_AUTOMATION_REPO_PATH}
           deploy/automation/01-deploy-control-plane/02-deploy-control-plane.sh
         env:
