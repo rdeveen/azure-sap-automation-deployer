@@ -1,6 +1,6 @@
 # Control Plane Deployment #
 
-Date : "Thu Mar 21 14:05:26 UTC 2024"
+Date : "Thu Mar 21 15:01:42 UTC 2024"
 
 ## Configuration details ##
 
@@ -8,7 +8,7 @@ Date : "Thu Mar 21 14:05:26 UTC 2024"
 | ----------------------- | -------------------- |
 | Environment             | DVD         |
 | Location                | westeurope              |
-| Keyvault Name           | DVDWEEUDEV10user260                                 |
+| Keyvault Name           | DVDWEEUDEV10user9EA                                 |
 | Deployer IP             | 51.137.115.225                                      |
 | Terraform state         | dvdweeutfstate340                          |
 
